@@ -1,0 +1,113 @@
+.card {
+   border: 4px solid black;
+   border-radius: 12px;
+   padding: 1.5rem;
+}
+
+.button {
+    width: 10rem;
+    height: 5rem;
+    margin-left: 3.5rem;
+    background-color: lightgray;
+    font-weight: bold;
+    border-color: black;
+    border-width: 4px;
+    color: white;
+    border-radius: 8px;
+    font-size: 2rem;
+    cursor: pointer;
+    font-family: "Source Code Pro";
+}
+
+.article-heading {
+   font-family: "Source Code Pro";
+   color: black;
+   font-size: 4rem;
+   margin-left: 3rem;
+   margin-top: -1rem;
+   font-weight: bold;
+}
+
+.article-title {
+   font-family: "Source Code Pro";
+   color: black;
+   font-size: 2rem;
+   margin-left: 15rem;
+   margin-bottom: 3rem;
+}
+
+.article-date-home {
+   font-family: "Source Code Pro";
+   color: gray;
+   font-style: italic;
+   font-size: 2rem;
+   margin-right: 15rem;
+   margin-bottom: 3rem;
+}
+
+.article-list-item {
+   font-weight: bold;
+   display: flex;
+   justify-content: space-between;
+}
+
+.article-text {
+    font-family: "Source Code Pro";
+    color: black;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-weight: bold
+}
+
+.article-date-article {
+   font-family: "Source Code Pro";
+   color: gray;
+   font-style: italic;
+   font-size: 2rem;
+   margin-left: 3rem;
+}
+
+.article-list {
+   list-style: none;
+   padding: 0;    /* ← wichtig! Browser fügen <ul> standard-padding hinzu */
+   margin: 0;
+}
+
+.clean-link {
+    text-decoration: none;
+    color: inherit;
+   font-style: normal;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: "Source Code Pro";
+    font-weight: bold;
+}
+
+.clean-link:hover{
+   color: burlywood;
+}
+
+.input-area {
+   width: 100%;
+   padding: 0.5rem;
+   border: none;
+   box-sizing: border-box;
+   font-size: 2rem;
+   font-family: "Source Code Pro";
+}
+
+.text-area {
+   width: 100%;
+   height: 500px;
+   padding: 0.5rem;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   box-sizing: border-box;
+   resize: vertical;
+   font-size: 1rem;
+}
+
+

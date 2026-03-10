@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="^">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>admin view</title>
+    <link rel="stylesheet" th:href="@{/style.css}" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="card">
+    <h1 class="article-heading">
+        <span>Personal Blog - Admin</span>
+        <a th:href="@{/new}" style="padding-left: 3rem;" class="clean-link">Add</a>
+    </h1>
+
+    <li class="article-list" th:each="article, status : ${articleList}">
+
+        <article class="article-list-item">
+            <span class="article-title" th:text="${article.title}"></span>
+            <span class="article-date-home">
+
+                <span><a th:href="@{/edit/{idx}(idx=${status.index})}" class="clean-link">Edit</a></span>
+               <span><form style="display:inline" method="post" th:action="@{admin/delete/{idx}(idx=${status.index})}"><input class="clean-link" type="submit" value="Delete" ></form></span>
+
+            </span>
+        </article>
+
+    </li>
+</div>
+</body>
+</html>

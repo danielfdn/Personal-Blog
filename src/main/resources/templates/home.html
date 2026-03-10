@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="^">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>home</title>
+    <link rel="stylesheet" th:href="@{/style.css}" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="card">
+<h1 class="article-heading">Personal Blog</h1>
+        <li class="article-list" th:each="article, index : ${articleList}">
+    <article class="article-list-item">
+        <a class="article-title clean-link" th:href="@{/article/{idx}(idx=${index.index})}" th:text="${article.title}">
+        </a>
+        <span class="article-date-home" th:text="${article.date}"></span>
+    </article>
+        </li>
+</div>
+<a th:href="@{/admin}"><input type="submit" value="Admin View" class="button" style="color: black;
+                                                               margin-left: .05rem; margin-top: 1rem;
+                                                               width: 17rem;"></a>
+</body>
+</html>
