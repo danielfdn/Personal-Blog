@@ -14,7 +14,7 @@
 <body class="card">
 <h1 class="article-heading">Update Article</h1>
 
-<form method="post" th:object="${article}" th:action="@{/edit/{idx}(idx=${idx})}">
+<form method="post" th:object="${article}" th:action="@{/edit/{id}(id=${id})}">
 
 <h3 class="article-title card"><input class="input-area" type="text" placeholder="Article title" th:field="*{title}"></h3>
 <h3 class="article-title card" style="color: gray"; th:text="${article.date}"></h3>

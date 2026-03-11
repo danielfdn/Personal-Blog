@@ -16,7 +16,7 @@
 <h1 class="article-heading">Personal Blog</h1>
         <li class="article-list" th:each="article, index : ${articleList}">
     <article class="article-list-item">
-        <a class="article-title clean-link" th:href="@{/article/{idx}(idx=${index.index})}" th:text="${article.title}">
+        <a class="article-title clean-link" th:href="@{/article/{id}(id=${article.id})}" th:text="${article.title}">
         </a>
         <span class="article-date-home" th:text="${article.date}"></span>
     </article>

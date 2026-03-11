@@ -24,8 +24,8 @@
             <span class="article-title" th:text="${article.title}"></span>
             <span class="article-date-home">
 
-                <span><a th:href="@{/edit/{idx}(idx=${status.index})}" class="clean-link">Edit</a></span>
-               <span><form style="display:inline" method="post" th:action="@{admin/delete/{idx}(idx=${status.index})}"><input class="clean-link" type="submit" value="Delete" ></form></span>
+                <span><a th:href="@{/edit/{id}(id=${article.id})}" class="clean-link">Edit</a></span>
+               <span><form style="display:inline" method="post" th:action="@{admin/delete/{id}(id=${article.id})}"><input class="clean-link" type="submit" value="Delete" ></form></span>
 
             </span>
         </article>
